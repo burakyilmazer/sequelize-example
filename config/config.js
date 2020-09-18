@@ -1,10 +1,10 @@
 require('dotenv').config();
 module.exports = {
   development: {
-    username: "burak",
-    password: "123456",
+    username: "postgres",
+    password: "docker",
     database: "books",
-    host: "127.0.0.1",
+    host: "172.17.0.2", // docker inspect (postgresql container ipsini ver) 
     dialect: "postgres"
   },
   test: {
